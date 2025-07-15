@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es"  xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -63,11 +63,9 @@
         <img src="cid:logoImagen" alt="Logo" class="logo" />
 
         <h1>¡Hola, <span th:text="${nombre}"></span>!</h1>
-        <p class="text-muted">Has solicitado la recuperación de tu contraseña.</p>
+        <p class="text-muted">Tu solicitud  <span th:text="${idSolicitud}"></span>  tiene novedad</p>
 
-        <p>Para completar , simplemente haz clic en el botón de abajo:</p>
-
-        <a th:href="${recoveryLink}" class="btn-primary">Cambio contraseña</a>
+        <p>Tu solicitud ha sido observada. Inicia Sesión en tu plataforma de vecino para obtener mas detalles</p>
 
 
         <p class="mt-4 text-secondary">
